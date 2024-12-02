@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  position: relative;
+}
+body .aside {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 40vh;
+  animation: showsidebar 1s linear;
+}
+body .aside h2 {
+  text-align: center;
+}
+body .aside .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+body .aside .links .links-item-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+body .aside .links .links-item-container .links-item {
+  width: 100px;
+  height: 100px;
+  border: 0.25rem solid black;
+  border-radius: 25%;
+  background-color: rgb(24, 228, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+body .aside .links .links-item-container .translatespin {
+  position: fixed;
+  top: var(--start-top);
+  left: 50%;
+  z-index: 1000;
+  animation: translatespinitem 3s linear;
+}
+body .aside .links .links-item-container .disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@keyframes showsidebar {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes translatespinitem {
+  from {
+    top: var(--start-top);
+    left: 10%; /* Starting point: in the red sidebar */
+    transform: rotate(0deg);
+  }
+  50% {
+    top: calc(var(--start-top) * 0.5);
+    left: 25%; /* Midpoint: horizontally centered but not vertical */
+    transform: rotate(180deg); /* Half rotation */
+  }
+  to {
+    top: var(--start-top);
+    left: 50%; /* Final position: viewport center */
+    transform: rotate(360deg); /* Full rotation */
+  }
+}/*# sourceMappingURL=style.css.map */

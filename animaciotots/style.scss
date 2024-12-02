@@ -1,0 +1,22 @@
+.quadrat {
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: ;
+    animation-direction: ;
+}
+
+
+@keyframes moureICanviarMida {
+    
+    from {
+        transform: translate(0%,0%) scale(1);
+    }
+
+    to {
+
+        transform: translate(100%,100%) scale(2);
+    }
+}

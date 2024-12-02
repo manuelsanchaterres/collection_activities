@@ -1,0 +1,24 @@
+.square {
+
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: relative;
+}
+
+.move-left {
+
+    animation: move-left 5s linear;
+}
+
+@keyframes move-left {
+    
+    from {
+        transform: translate(0,0);
+    }
+
+    to {
+
+        transform: translate(500px,0);
+    }
+}

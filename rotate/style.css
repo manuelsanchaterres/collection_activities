@@ -1,0 +1,19 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: relative;
+}
+
+.gir {
+  animation: gir 2s linear infinite;
+}
+
+@keyframes gir {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+h2 {
+  animation: showtext 5s linear;
+  animation-iteration-count: 1;
+}
+
+h3 {
+  animation: translatetexty 2s linear;
+  animation-iteration-count: 1;
+}
+
+img {
+  animation: translateimagesx 1.5s linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes showtext {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes translatetexty {
+  from {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes translateimagesx {
+  from {
+    transform: translate(200px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=style.css.map */
